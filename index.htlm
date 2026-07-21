@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>StudyTwin AI</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    padding:18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.95);
+    box-shadow:0 3px 15px rgba(0,0,0,0.15);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#667eea;
+}
+
+nav button{
+    border:none;
+    background:none;
+    margin-left:10px;
+    cursor:pointer;
+    font-weight:bold;
+    color:#555;
+}
+
+/* MAIN */
+
+.container{
+    width:92%;
+    max-width:750px;
+    margin:45px auto;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:36px;
+    margin-bottom:12px;
+}
+
+.hero p{
+    font-size:17px;
+    line-height:1.5;
+}
+
+/* SEARCH */
+
+.search-box{
+    background:white;
+    padding:25px;
+    border-radius:22px;
+    box-shadow:0 12px 35px rgba(0,0,0,0.2);
+}
+
+textarea{
+    width:100%;
+    height:130px;
+    padding:16px;
+    border:2px solid #ddd;
+    border-radius:14px;
+    font-size:16px;
+    resize:none;
+    outline:none;
+}
+
+textarea:focus{
+    border-color:#667eea;
+}
+
+.options{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+select{
+    flex:1;
+    padding:13px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    font-size:14px;
+}
+
+/* BUTTON */
+
+.ask-btn{
+    width:100%;
+    padding:16px;
+    margin-top:18px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.ask-btn:hover{
+    transform:scale(1.01);
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:25px;
+}
+
+.feature{
+    background:rgba(255,255,255,0.95);
+    padding:18px;
+    border-radius:15px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.feature span{
+    display:block;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    color:white;
+    padding:30px 10px;
+    font-size:14px;
+}
+
+/* MOBILE */
+
+@media(max-width:500px){
+
+    .hero h1{
+        font-size:29px;
+    }
+
+    .options{
+        flex-direction:column;
+    }
+
+    .logo{
+        font-size:19px;
+    }
+
+    nav button{
+        font-size:12px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+
+🎓 StudyTwin AI
+
+</div>
+
+
+<nav>
+
+<button>Home</button>
+
+<button>Notes</button>
+
+<button>Quiz</button>
+
+</nav>
+
+</header>
+
+
+
+<main class="container">
+
+
+<section class="hero">
+
+<h1>
+
+Ask Once. Understand Twice.
+
+</h1>
+
+
+<p>
+
+Two AI teachers give you different explanations
+so you can understand any topic better.
+
+</p>
+
+</section>
+
+
+
+<section class="search-box">
+
+
+<textarea
+
+placeholder="🔍 Ask your study question...
+
+Example:
+
+Explain the Indian National Movement">
+
+</textarea>
+
+
+
+<div class="options">
+
+
+<select>
+
+<option>🌐 English</option>
+
+<option>🇮🇳 Hindi</option>
+
+<option>💬 Hinglish</option>
+
+</select>
+
+
+
+<select>
+
+<option>📚 Simple Explanation</option>
+
+<option>📖 Detailed Explanation</option>
+
+<option>🎯 Exam Mode</option>
+
+</select>
+
+
+</div>
+
+
+
+<button class="ask-btn">
+
+🤖 Ask Two AI Teachers
+
+</button>
+
+
+</section>
+
+
+
+<section class="features">
+
+
+<div class="feature">
+
+<span>🤖</span>
+
+Two AI Explanations
+
+</div>
+
+
+<div class="feature">
+
+<span>📝</span>
+
+AI Study Notes
+
+</div>
+
+
+<div class="feature">
+
+<span>❓</span>
+
+AI Quiz
+
+</div>
+
+
+<div class="feature">
+
+<span>🎯</span>
+
+Exam Answers
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+© 2026 StudyTwin AI
+
+<br>
+
+Ask Once • Learn Better • Score Better ❤️
+
+</footer>
+
+
+</body>
+
+</html>
