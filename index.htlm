@@ -235,13 +235,10 @@ askButton.addEventListener("click", async function(){
                     "Content-Type":"application/json"
                 },
 
-                body:JSON.stringify({
-
-                    question:question,
-
-                    language:language,
-
-                    model:mode
+                body: JSON.stringify({
+    question: question,
+    language: language,
+    mode: mode
 
                 })
 
